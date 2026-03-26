@@ -1,0 +1,74 @@
+.join-screen {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background:
+    radial-gradient(ellipse 60% 50% at 50% 0%, rgba(0,229,255,.07) 0%, transparent 70%),
+    var(--bg);
+}
+
+.join-card {
+  width: 360px;
+  padding: 40px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-top: 2px solid var(--accent);
+  border-radius: var(--radius);
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.join-logo {
+  font-family: var(--font-mono);
+  font-size: 32px;
+  font-weight: 700;
+  letter-spacing: 6px;
+  text-align: center;
+}
+.logo-bracket { color: var(--accent); }
+.logo-text    { color: var(--text); }
+
+.join-sub {
+  text-align: center;
+  color: var(--muted);
+  font-size: 11px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.join-field { display: flex; flex-direction: column; gap: 8px; }
+.join-field label {
+  font-size: 10px;
+  letter-spacing: 2px;
+  color: var(--muted);
+}
+.join-field input {
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  color: var(--text);
+  font-family: var(--font-mono);
+  font-size: 14px;
+  padding: 10px 14px;
+  outline: none;
+  transition: border-color .2s;
+}
+.join-field input:focus { border-color: var(--accent); }
+.field-error { font-size: 11px; color: var(--accent2); }
+
+.join-btn {
+  background: transparent;
+  border: 1px solid var(--accent);
+  color: var(--accent);
+  font-family: var(--font-ui);
+  font-size: 13px;
+  letter-spacing: 3px;
+  padding: 12px;
+  border-radius: var(--radius);
+  cursor: pointer;
+  transition: background .2s, color .2s;
+}
+.join-btn:hover { background: var(--accent); color: var(--bg); }
+.btn-arrow { margin-left: 8px; }
